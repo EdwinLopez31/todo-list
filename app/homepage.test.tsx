@@ -1,4 +1,3 @@
-import { expect, it, describe } from 'vitest';
 import { render, screen, within } from '@testing-library/react';
 import Home from './page';
 
