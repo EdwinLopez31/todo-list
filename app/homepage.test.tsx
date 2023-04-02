@@ -8,6 +8,6 @@ describe('home', () => {
     const main = within(screen.getByRole('main'));
     expect(
       main.getByRole('heading', { level: 1, name: /My NextJS Boilerplate/i })
-    ).toBeDefined();
+    ).toBeInTheDocument();
   });
 });
