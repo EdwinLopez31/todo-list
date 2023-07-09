@@ -1,5 +1,5 @@
 import { render, screen, within } from '@testing-library/react';
-import Home from './page';
+import Home from '@/app/page';
 
 describe('home', () => {
   it('should have a h1 stating my next js boilerplate', () => {
