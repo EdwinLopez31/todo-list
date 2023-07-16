@@ -1,3 +1,5 @@
+// SEPARATE TSCONFIG FOR CYPRESS V10 TYPES CONFLICTING WITH VITEST
+
 {
   "compilerOptions": {
     "target": "es5",
@@ -14,21 +16,21 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "types": ["vitest/globals"],
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "types": ["cypress", "../node_modules/cypress"],
     "paths": {
-      "@/*": ["./*"],
-      "components/*": ["./components/*"]
-      // "pages": ["./app/*"],
-      // "styles": ["./pages/*"]
-      // "utils": ["./utils/*"]
-      // "constants": ["./constants/*"]
+      "@/*": ["../*"],
+      "components/*": ["../components/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", "cypress.config.ts", "cypress"]
+  "include": [
+    "../node_modules/cypress",
+    "../next-env.d.ts",
+    "../**/*.tsx",
+    "../**/*.ts",
+    "../**/*.tsx",
+    "../.next/types/**/*.ts",
+    "../cypress.config.ts",
+    "cypress"
+  ],
+  "exclude": ["node_modules"]
 }
