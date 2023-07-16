@@ -1,7 +1,9 @@
 {
+  "plugins": ["cypress"],
   "extends": [
     "next/core-web-vitals",
     "prettier",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "plugin:cypress/recommended"
   ]
 }
