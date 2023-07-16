@@ -12,6 +12,10 @@ const meta: Meta<typeof Input> = {
       options: ['text', 'number', 'password', 'email'],
       control: { type: 'radio' },
     },
+    state: {
+      options: ['default', 'error'],
+      control: { type: 'radio' },
+    },
   },
 };
 
@@ -22,6 +26,7 @@ export const Text: Story = {
   args: {
     type: 'text',
     placeholder: 'Sample value',
+    helperText: 'Some interesting text',
   },
 };
 
