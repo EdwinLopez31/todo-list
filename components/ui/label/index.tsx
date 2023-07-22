@@ -36,7 +36,7 @@ const Label = ({
 }: LabelProps) => {
   return (
     <label
-      className={`${labelStyles({ uppercase })} ${className}`}
+      className={`${labelStyles({ uppercase })} ${className ?? ''}`}
       {...props}
       htmlFor={htmlFor}
     >
