@@ -6,7 +6,7 @@ const inputStyles = cva(
   {
     variants: {
       state: {
-        default: 'border-neutral-300 focus:outline-violet-500',
+        default: 'border-neutral-300 focus:outline-violet-500 caret-violet-500',
         error: 'border-red-500 focus:outline-red-500',
       },
     },
