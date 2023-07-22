@@ -38,7 +38,10 @@ interface ButtonProps
 
 const Button = ({ text, state, className, ...props }: ButtonProps) => {
   return (
-    <button className={`${buttonStyles({ state })} ${className}`} {...props}>
+    <button
+      className={`${buttonStyles({ state })} ${className ?? ''}`}
+      {...props}
+    >
       {text}
     </button>
   );

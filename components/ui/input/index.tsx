@@ -48,7 +48,7 @@ const Input = ({ className, state, helperText, ...props }: InputProps) => {
   return (
     <div className="flex flex-col gap-2">
       <input
-        className={`${inputStyles({ state })} ${className}`}
+        className={`${inputStyles({ state })} ${className ?? ''}`}
         aria-label={props.id}
         {...props}
       />
